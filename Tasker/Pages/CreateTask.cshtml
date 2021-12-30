@@ -2,4 +2,16 @@
 @model Tasker.Pages.CreateTaskModel
 <h1>New Task</h1>
 @{
+	<form asp-page="CreateTask" method="post">
+		<label asp-for="NewTask.Title">
+			<input type="text" asp-for="NewTask.Title"/>
+		</label>
+		<label asp-for="NewTask.Description">
+			<input type="text" asp-for="NewTask.Description"/>
+		</label>
+		<label asp-for="NewTask.Priority">
+			<input type="text" asp-for="NewTask.Priority"/>
+		</label>
+		<input type="submit"/>
+	</form>
 }
